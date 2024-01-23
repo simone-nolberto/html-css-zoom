@@ -9,8 +9,34 @@ button{
     background-color: var(--zoom-button-bg);
     color: white;
 }
+body{
+    background-color: var(--zoom-bg);
+}
 /* #region header */
 header{
     display: flex;
 }
 /* #endregion header */
+
+/* #region footer */
+.bottom-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal{
+    color: white;
+}
+.meeting{
+    color: white;
+}
+.quit{
+    background-color: var(--zoom-button-bg);
+    color: var(--zoom-quit);
+    max-width: fit-content;
+    padding: 1rem;
+}
+.fa-share-from-square{
+    color: var(--zoom-button-on);
+}
+/* #endregion footer */
