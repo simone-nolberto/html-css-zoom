@@ -13,8 +13,9 @@ body{
     background-color: var(--zoom-bg);
 }
 /* #region header */
-header{
+.top-menu{
     display: flex;
+    justify-content: flex-end;
 }
 /* #endregion header */
 
