@@ -1,43 +1,87 @@
-:root{
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
     --zoom-bg: rgba(0, 0, 0, 1);
     --zoom-button-bg: rgba(74, 74, 74, 1);
     --zoom-button-on: rgba(75, 200, 0, 1);
     --zoom-quit: rgba(230, 18, 25, 1);
     --zoom-footer-bg: rgba(34, 34, 34, 1);
 }
-button{
+
+button {
     background-color: var(--zoom-button-bg);
     color: white;
 }
-body{
+
+body {
     background-color: var(--zoom-bg);
 }
+
 /* #region header */
-.top-menu{
+.top-menu {
     display: flex;
     justify-content: flex-end;
 }
+
 /* #endregion header */
+/* #region main */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-7{
+    width: calc((100%/12)*1.7);
+    padding: 1rem 0.5rem;
+}
+.card{
+    position: relative;
+}
+.student-name{
+    color: white;
+    background-color: rgba(211, 211, 211, 0.19);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+/* #endregion main */
+
+
+
+
+
 
 /* #region footer */
-.bottom-menu{
+.bottom-menu {
+    background-color: var(--zoom-footer-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.personal{
+
+.personal {
     color: white;
 }
-.meeting{
+
+.meeting {
     color: white;
 }
-.quit{
+
+.quit {
     background-color: var(--zoom-button-bg);
     color: var(--zoom-quit);
     max-width: fit-content;
     padding: 1rem;
 }
-.fa-share-from-square{
+
+.fa-share-from-square {
     color: var(--zoom-button-on);
 }
+
 /* #endregion footer */
