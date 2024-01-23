@@ -1,0 +1,16 @@
+:root{
+    --zoom-bg: rgba(0, 0, 0, 1);
+    --zoom-button-bg: rgba(74, 74, 74, 1);
+    --zoom-button-on: rgba(75, 200, 0, 1);
+    --zoom-quit: rgba(230, 18, 25, 1);
+    --zoom-footer-bg: rgba(34, 34, 34, 1);
+}
+button{
+    background-color: var(--zoom-button-bg);
+    color: white;
+}
+/* #region header */
+header{
+    display: flex;
+}
+/* #endregion header */
